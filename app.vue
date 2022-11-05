@@ -1,5 +1,9 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <IndexPage />
   </div>
 </template>
+
+<script setup>
+import '@/assets/css/main.css'
+</script>
