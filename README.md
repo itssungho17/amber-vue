@@ -1,7 +1,11 @@
 # Amber Vue Project
 
 This is a sample vue project with...
+- Nuxt
+- Vite
+- TypeScript
 - Tailwind CSS
+- GSAP
 
 ## Setup
 

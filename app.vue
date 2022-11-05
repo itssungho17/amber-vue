@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <IndexPage />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup>
