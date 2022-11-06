@@ -1,0 +1,9 @@
+query AMBERS_QUERY($search: String) {
+  ambers(search: $search) {
+    title,
+    body,
+    user {
+      name
+    }
+  }
+}

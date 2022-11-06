@@ -3,9 +3,12 @@
 This is a sample vue project with...
 - Nuxt
 - Vite
-- TypeScript
+- TypeScript (partially)
+- GraphQL
 - Tailwind CSS
 - GSAP
+- Vee-Validate
+- YUP
 
 ## Setup
 
