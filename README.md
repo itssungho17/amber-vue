@@ -3,12 +3,16 @@
 This is a sample vue project with...
 - Nuxt
 - Vite
-- TypeScript (partially)
-- GraphQL
 - Tailwind CSS
-- GSAP
+- TypeScript (partially)
 - Vee-Validate
 - YUP
+- GraphQL (TBD)
+- GSAP (TBD)
+
+## Recent Commit
+
+Add Login UI
 
 ## Setup
 

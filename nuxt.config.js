@@ -1,6 +1,14 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/apollo'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/apollo',
+    '@pinia/nuxt'
+  ],
+  imports: [
+    'defineStore',
+    ['defineStore', 'definePiniaStore'],
+  ],
   apollo: {
     clients: {
       default: {
@@ -9,11 +17,15 @@ export default defineNuxtConfig({
       }
     },
   },
-  css: ['@/assets/css/main.css'],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
+  app: {
+    head: {
+      title: 'Ambers',
+      meta: [
+        { name: 'description', content: 'Ambers' }
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Raleway' }
+      ]
     }
-  }
+  },
 })
