@@ -1,13 +1,15 @@
 <template>
   <div>
     <header class="shadow bg-slate-900">
-      <nav class="container mx-auto p-4 flex justify-between">
-        <NuxtLink to="/" class="font-bold text-xl text-amber-500">Amber</NuxtLink>
+      <nav class="container mx-auto p-4 flex justify-between items-center">
+        <NuxtLink to="/" class="flex flex-row items-center">
+          <img src="~~/assets/images/ic_logo_amber.png" class="mr-4 h-8" alt="Flowbite Logo" />
+          <span class="font-extrabold text-2xl text-amber-500">Amber</span>
+        </NuxtLink>
         <ul class="flex gap-10">
           <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
-          <li><NuxtLink to="/login">Login</NuxtLink></li>
+          <li><NuxtLink to="/signin">Sign in</NuxtLink></li>
+          <li><NuxtLink to="/signup">Sign up</NuxtLink></li>
         </ul>
       </nav>
     </header>
