@@ -8,7 +8,7 @@
         onInput: updateValue
       }"
       :name="name" :value="modelValue" :placeholder="placeholder"
-      class="w-80 bg-slate-100 rounded border border-slate-400 mt-2 py-2 px-4 text-sm" />
+      class="w-full bg-slate-100 rounded border border-slate-400 py-2 px-4 text-sm" />
   </div>
 </template>
 

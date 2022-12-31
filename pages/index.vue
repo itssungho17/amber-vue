@@ -6,10 +6,17 @@
           <img src="~~/assets/images/ic_logo_amber.png" class="mr-4 h-8" alt="Flowbite Logo" />
           <span class="font-extrabold text-2xl text-amber-500">Amber</span>
         </NuxtLink>
-        <ul class="flex gap-10">
+        <ul class="flex items-center gap-10">
           <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/signin">Sign in</NuxtLink></li>
-          <li><NuxtLink to="/signup">Sign up</NuxtLink></li>
+          <li>
+            <NuxtLink v-if="!store.loggedIn" to="/signin">Log in</NuxtLink>
+            <button v-else @click="logout" class="button w-full px-3 py-1 rounded-lg bg-amber-500 text-black hover:text-white font-bold">
+              Log out
+            </button>
+          </li>
+          <li>
+            <NuxtLink v-if="!store.loggedIn" to="/signup">Sign up</NuxtLink>
+          </li>
         </ul>
       </nav>
     </header>
@@ -32,9 +39,17 @@
 </template>
 
 <script setup>
+import { useAuthStore } from '~~/stores/authStore'
+
 definePageMeta({
   layout: 'home'
 })
+
+const store = useAuthStore()
+
+function logout() {
+  store.logout()
+}
 </script>
 
 <style scoped>

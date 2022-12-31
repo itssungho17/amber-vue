@@ -1,12 +1,14 @@
 # Amber Vue Project
 
 This is a sample vue project with...
-- Nuxt
+- Nuxt 3
+- Vue 3
 - Vite
 - Tailwind CSS
-- TypeScript (partially)
 - Vee-Validate
 - YUP
+- Axios
+- Pinia
 - GraphQL (TBD)
 - GSAP (TBD)
 
